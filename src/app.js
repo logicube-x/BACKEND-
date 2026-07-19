@@ -16,5 +16,11 @@ res.status(201).json({
 
 })
 
+app.get("/notes",(req,res)=>{
+    res.status(200).json({
+        message:"fetched the note successfully",
+        note:notes
+    })
+})
 
 module.exports=app;
